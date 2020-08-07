@@ -1,3 +1,6 @@
 [submodule "docker-react"]
 	path = docker-react
 	url = https://github.com/JackMcKew/docker-react
+[submodule "multi-docker"]
+	path = multi-docker
+	url = https://github.com/JackMcKew/multi-docker
