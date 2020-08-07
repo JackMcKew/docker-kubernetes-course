@@ -13,7 +13,7 @@
     <ul v-if="seenIndexes && seenIndexes.length">
       <h3>Indexes I have seen:</h3>
 
-      <p>{{ seenIndexes.map((x) => x.number).join(", ") }}</p>
+      <p>{{ seenIndexes.map(x => x.number).join(", ") }}</p>
     </ul>
 
     <ul>
@@ -36,7 +36,7 @@ export default {
       seenIndexes: [],
       values: {},
       index: "",
-      inputValue: "Enter a value",
+      inputValue: "Enter a value"
     };
   },
 
@@ -56,13 +56,13 @@ export default {
   methods: {
     async handleSubmit() {
       await axios.post("/api/values", {
-        index: this.inputValue,
+        index: this.inputValue
       });
 
       this.index = "";
 
       window.location.reload();
-    },
-  },
+    }
+  }
 };
 </script>
